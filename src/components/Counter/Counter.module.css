@@ -1,0 +1,46 @@
+.counterContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.counterControls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+
+.counterButton {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #FED84C;
+  border: none;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.counterButton:hover {
+  background-color: #2e363e;
+  color: white;
+}
+
+.count {
+  font-size: 24px;
+  font-weight: 600;
+  min-width: 50px;
+  text-align: center;
+}
+
+.totalPrice {
+  font-size: 18px;
+  font-weight: 500;
+  color: #434b53;
+  text-align: center;
+}
