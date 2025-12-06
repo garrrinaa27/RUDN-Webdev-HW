@@ -2,31 +2,18 @@ import React from 'react'
 import styles from './Footer.module.css'
 
 const Footer: React.FC = () => {
-  const currentYear = new Date().getFullYear()
-
   return (
     <footer className={styles.footer}>
       <div className={styles.container}>
-        <div className={styles.footerContent}>
-          <div className={styles.footerSection}>
-            <h3 className={styles.footerTitle}>Контакты</h3>
-            <p className={styles.footerText}>+7 (999) 123-45-67</p>
-            <p className={styles.footerText}>Москва, ул. Кондитерская, д. 10</p>
-            <p className={styles.footerText}>Ежедневно с 9:00 до 21:00</p>
-          </div>
-          
-          <div className={styles.footerSection}>
-            <h3 className={styles.footerTitle}>О нас</h3>
-            <p className={styles.footerText}>
-              Изготавливаем торты и пирожные на заказ с 2020 года. 
-              Более 3000 довольных клиентов.
-            </p>
-          </div>
+        <div className={styles.topRow}>
+          <span className={styles.text}>Согласие на обработку данных</span>
+          <a href="#" className={styles.link}>Служба поддержки</a>
+          <a href="#" className={styles.link}>Политика конфиденциальности</a>
         </div>
         
-        <div className={styles.footerBottom}>
+        <div className={styles.bottomRow}>
           <p className={styles.copyright}>
-            © {currentYear} Кондитерская "Сладкая жизнь". Все права защищены.
+            © nazvaniesaita.ru, 2054 | Название компании или ИП ОГРН 0000000000000
           </p>
         </div>
       </div>

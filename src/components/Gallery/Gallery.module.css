@@ -1,0 +1,72 @@
+.galleryWrapper {
+    margin-bottom: 80px;
+    background-color: #ffffff;
+}
+
+.galleryHeader {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.galleryTitle {
+    font-size: 48px;
+    font-weight: 500;
+    color: #2e363e;
+    margin-bottom: 14px;
+    letter-spacing: -0.02em;
+}
+
+.gallerySubtitle {
+    font-size: 24px;
+    color: #2e363e;
+    font-weight: 400;
+    line-height: 1.43;
+}
+
+.galleryGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.galleryItem {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.galleryItem img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Медиа-запросы для адаптивности */
+@media (max-width: 1200px) {
+    .galleryTitle {
+        font-size: 28px;
+    }
+
+    .gallerySubtitle {
+        font-size: 16px;
+    }
+
+    .galleryGrid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 820px) {
+    .galleryTitle {
+        font-size: 24px;
+    }
+
+    .gallerySubtitle {
+        font-size: 14px;
+    }
+
+    .galleryGrid {
+        grid-template-columns: 1fr;
+    }
+}
